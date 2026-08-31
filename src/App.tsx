@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { ActiveTab } from './types';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
@@ -239,6 +240,9 @@ export function App() {
         onClose={() => setIsSearchOpen(false)}
         onNavigate={handleNavigate}
       />
+
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
     </div>
   );
 }
