@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from '@vercel/analytics/react';
 import { ActiveTab } from './types';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
@@ -243,6 +244,8 @@ export function App() {
 
       {/* Vercel Speed Insights */}
       <SpeedInsights />
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
